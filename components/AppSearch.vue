@@ -29,8 +29,8 @@
 
 <template>
   <div class="bg-primary p-6 flex flex-col items-center">
-    <h2 class="text-title-s mb-4 text-white">Olá, Pesquise por uma raça de cachorro</h2>
-    <div class="relative w-1/2">
+    <h2 class="text-body md:text-title-s mb-4 text-white">Olá, Pesquise por uma raça de cachorro</h2>
+    <div class="relative w-full md:w-1/2">
       <div class="relative">
         <div
           class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
