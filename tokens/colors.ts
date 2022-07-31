@@ -8,13 +8,13 @@ module.exports = {
     "lighest": "#F5E5FD",
   },
   neutral: {
-    "Bg": "#fbf9f7",
-    "Darkest": "#494238",
-    "Dark": "#635d57",
+    "bg": "#fbf9f7",
+    "darkest": "#494238",
+    "dark": "#635d57",
     "DEFAULT": "#867e75",
-    "Medium": "#d9d3cc",
-    "Light": "#f3eee8",
-    "Lightest": "#fbf9f7"
+    "medium": "#d9d3cc",
+    "light": "#f3eee8",
+    "lightest": "#fbf9f7"
   },
   positive: {
     "dark": "#17624C",

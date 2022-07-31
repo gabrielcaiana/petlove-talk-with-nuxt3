@@ -5,7 +5,7 @@
       <AppSearch />
     </div>
 
-    <main>
+    <main class=" my-10">
       <slot />
     </main>
 

@@ -28,7 +28,8 @@
 </script>
 
 <template>
-  <div class="bg-primary p-6 flex justify-center">
+  <div class="bg-primary p-6 flex flex-col items-center">
+    <h2 class="text-title-s mb-4 text-white">Olá, Pesquise por uma raça de cachorro</h2>
     <div class="relative w-1/2">
       <div class="relative">
         <div
