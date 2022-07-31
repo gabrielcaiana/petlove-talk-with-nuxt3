@@ -1,42 +1,35 @@
-# Nuxt 3 Minimal Starter
+<p align="center">
+<img src="./assets/images/cover.png" width="600"/>
+</p>
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+<h2 align="center">Petlove Pets</h2><br>
 
-## Setup
+<pre align="center">
+🧪 Projeto desenvolvido para a talk sobre nuxt 3 com strapi
+</pre>
 
-Make sure to install the dependencies:
+## Features
 
-```bash
-# yarn
-yarn install
+- [💚 Nuxt 3](https://v3.nuxtjs.org) - SSR, ESR, File-based routing, components auto importing, modules, etc.
 
-# npm
-npm install
+- ⚡️ Vite - Instant HMR
 
-# pnpm
-pnpm install --shamefully-hoist
-```
+- 🎨 [Tailwind](https://tailwindcss.com/) - Rapidly build modern websites without ever leaving your HTML.
 
-## Development Server
+- 🔥 The `<script setup>` syntax
 
-Start the development server on http://localhost:3000
+- 📑 [Layout system](./layouts)
 
-```bash
-npm run dev
-```
+- 📥 APIs auto importing - for Composition API, VueUse and custom composables.
 
-## Production
+- 🦾 TypeScript, of course
 
-Build the application for production:
+## Plugins
 
-```bash
-npm run build
-```
+### Nuxt Modules
 
-Locally preview production build:
+- [VueUse](https://github.com/vueuse/vueuse) - collection of useful composition APIs.
 
-```bash
-npm run preview
-```
+## IDE
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+We recommend using [VS Code](https://code.visualstudio.com/) with [Volar](https://github.com/johnsoncodehk/volar) to get the best experience (You might want to disable Vetur if you have it).
