@@ -1,9 +1,11 @@
 <template>
-  <div class="bg-white h-screen">
-    <AppHeader />
-    <AppSearch />
+  <div class="bg-white h-screen flex flex-col justify-between">
+    <div>
+      <AppHeader />
+      <AppSearch />
+    </div>
 
-    <main class="mb-15">
+    <main>
       <slot />
     </main>
 
