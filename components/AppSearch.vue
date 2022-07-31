@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { ref, computed, reactive } from 'vue'
-  const search = ref('')
+  const search = ref(null)
   const results = reactive([])
 
   const processChange = computed(() => useDebounceFn(() => filteredPets(), 1000))
@@ -49,7 +49,7 @@
 
       <!-- list pets -->
       <div
-        v-if="results.length"
+        v-show="results.length && search"
         class="w-full rounded-lg shadow-md shadow-neutral-dark p-6 absolute bg-white z-10"
       >
         <ul class="flex flex-col">

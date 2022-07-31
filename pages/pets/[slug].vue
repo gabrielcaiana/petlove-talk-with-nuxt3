@@ -3,10 +3,13 @@ import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-
 const pet = computed(() => route.params.slug)
+
+ useHead({
+    title: `${pet.value}`,
+  })
 </script>
 
 <template>
-  {{ pet }}
+  <h1>{{ pet }}</h1>
 </template>

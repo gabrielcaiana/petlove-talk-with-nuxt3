@@ -1,9 +1,9 @@
 <script setup>
   useHead({
-  title: 'Home',
-})
+    title: 'Home',
+  })
 </script>
 
 <template>
-  <AppSearch />
+  <h1>Home</h1>
 </template>
