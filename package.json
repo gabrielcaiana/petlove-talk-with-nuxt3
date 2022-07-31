@@ -1,4 +1,7 @@
 {
+  "name": "petlove-talk-with-nuxt3",
+  "author": "Gabriel Caiana",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -8,5 +11,12 @@
   },
   "devDependencies": {
     "nuxt": "3.0.0-rc.6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielcaiana/petlove-talk-with-nuxt3"
+  },
+  "keywords": [
+    "Nuxt3", "Strapi", "Graphql"
+  ]
 }
