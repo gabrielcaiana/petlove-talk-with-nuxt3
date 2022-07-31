@@ -17,12 +17,14 @@ export default defineNuxtConfig({
        },
      ],
      link: [
-       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', sizes: 'any' },
+       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg', sizes: 'any' },
        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }
      ],
    },
  },
  css: ["~/assets/css/tailwind.css", '~/assets/css/fonts.css'],
+
+ components: [{ path: '@/components', pathPrefix: false }],
 
  modules: [
   '@vueuse/nuxt',
