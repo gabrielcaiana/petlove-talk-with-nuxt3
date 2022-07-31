@@ -22,7 +22,7 @@ export default defineNuxtConfig({
      ],
    },
  },
- css: ["~/assets/css/tailwind.css", '~/assets/css/fonts.css'],
+ css: ["~/assets/css/tailwind.css", '~/assets/css/fonts.css', '~/assets/css/animations.css'],
 
  components: [{ path: '@/components', pathPrefix: false }],
 

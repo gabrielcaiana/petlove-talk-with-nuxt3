@@ -4,4 +4,6 @@
 })
 </script>
 
-<template></template>
+<template>
+  <AppSearch />
+</template>

@@ -3,14 +3,14 @@ const { colors, spacing, borderRadius, fontSize, fontFamily, fontWeight } = requ
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  purge: [
+  content: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
+    // "./nuxt.config.{js,ts}",
   ],
-  darkMode: false, // or 'media' or 'class'
+  media: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors,

@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-white h-screen flex flex-col justify-between">
+  <div class="bg-white h-screen">
     <AppHeader />
 
-    <main>
+    <main class="mb-15">
       <slot />
     </main>
 
