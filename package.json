@@ -23,5 +23,9 @@
     "Nuxt3",
     "Strapi",
     "Graphql"
-  ]
+  ],
+  "dependencies": {
+    "@vueuse/core": "^9.0.2",
+    "@vueuse/nuxt": "^9.0.2"
+  }
 }

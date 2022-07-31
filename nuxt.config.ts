@@ -23,6 +23,11 @@ export default defineNuxtConfig({
    },
  },
  css: ["~/assets/css/tailwind.css", '~/assets/css/fonts.css'],
+
+ modules: [
+  '@vueuse/nuxt',
+],
+
  build: {
   postcss: {
     postcssOptions: {
