@@ -22,4 +22,15 @@ export default defineNuxtConfig({
      ],
    },
  },
+ css: ["~/assets/css/tailwind.css", '~/assets/css/fonts.css'],
+ build: {
+  postcss: {
+    postcssOptions: {
+      plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 })
