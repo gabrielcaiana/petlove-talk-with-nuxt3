@@ -11,7 +11,7 @@ import breeds from '~/mocks/breed.json'
          :to="{
           name: 'pets-slug',
           params: {
-            slug: item.id
+            slug: item.slug
           }
         }">
         <div :class="`card-zoom-image`">
