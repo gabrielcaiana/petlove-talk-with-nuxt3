@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { computed } from 'vue'
 const year = computed(() => new Date().getFullYear())
 </script>

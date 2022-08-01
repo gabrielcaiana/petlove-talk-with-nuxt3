@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import breeds from '~/mocks/breed.json'
 </script>
 

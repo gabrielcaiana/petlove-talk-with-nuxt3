@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
   import { ref, computed, reactive } from 'vue'
   const search = ref(null)
   const results = reactive([])
