@@ -1,5 +1,5 @@
 <p align="center">
-<img src="./assets/images/cover.png" width="600"/>
+<img src="./assets/images/preview.gif" width="600"/>
 </p>
 
 <h2 align="center">Petlove Pets</h2><br>
