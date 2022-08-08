@@ -3,14 +3,48 @@
     "id": 1,
     "slug": "affenpinscher",
     "name": "Affenpinscher",
-    "origin": "Germany, France",
     "image": {
       "id": "BJa4kxc4X",
       "width": 1600,
       "height": 1199,
       "url": "https://cdn2.thedogapi.com/images/BJa4kxc4X.jpg"
     },
-    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    "pelage": "Com pelo arame sem padrões específicos para tosa, o affenpinscher conta com uma pelagem grossa e bem áspera. Sua “barba” e “bigode” costumam ser compridos e devem ser bem secos diariamente para evitar problemas de pele, mau cheiro e fungos. Sua coloração normalmente é preta, podendo haver exemplares com tons mais acinzentados. Pets dourados e vermelhos também são oficialmente reconhecidos, apesar de mais incomuns.",
+    "particulars": [
+      {
+        "name": "Energia",
+        "value": 3
+      },
+      {
+        "name": "Obediência",
+        "value": 5
+      },
+      {
+        "name": "Inteligência",
+        "value": 4
+      },
+      {
+        "name": "Territorialista",
+        "value": 3
+      },
+      {
+        "name": "Apego ao dono",
+        "value": 5
+      },
+      {
+        "name": "Tendência a latir",
+        "value": 2
+      },
+      {
+        "name": "Amizade com crianças",
+        "value": 4
+      },
+      {
+        "name": "Amizade com outros animais",
+        "value": 3
+      }
+    ]
   },
   {
     "id": 2,
@@ -23,7 +57,42 @@
       "height": 380,
       "url": "https://cdn2.thedogapi.com/images/hMyT4CDXR.jpg"
     },
-    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    "pelage": "Com pelo arame sem padrões específicos para tosa, o affenpinscher conta com uma pelagem grossa e bem áspera. Sua “barba” e “bigode” costumam ser compridos e devem ser bem secos diariamente para evitar problemas de pele, mau cheiro e fungos. Sua coloração normalmente é preta, podendo haver exemplares com tons mais acinzentados. Pets dourados e vermelhos também são oficialmente reconhecidos, apesar de mais incomuns.",
+    "particulars": [
+      {
+        "name": "Energia",
+        "value": 3
+      },
+      {
+        "name": "Obediência",
+        "value": 5
+      },
+      {
+        "name": "Inteligência",
+        "value": 4
+      },
+      {
+        "name": "Territorialista",
+        "value": 3
+      },
+      {
+        "name": "Apego ao dono",
+        "value": 5
+      },
+      {
+        "name": "Tendência a latir",
+        "value": 2
+      },
+      {
+        "name": "Amizade com crianças",
+        "value": 4
+      },
+      {
+        "name": "Amizade com outros animais",
+        "value": 3
+      }
+    ]
   },
   {
     "id": 3,
@@ -37,6 +106,41 @@
       "height": 335,
       "url": "https://cdn2.thedogapi.com/images/rkiByec47.jpg"
     },
-    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+    "description": "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+    "pelage": "Com pelo arame sem padrões específicos para tosa, o affenpinscher conta com uma pelagem grossa e bem áspera. Sua “barba” e “bigode” costumam ser compridos e devem ser bem secos diariamente para evitar problemas de pele, mau cheiro e fungos. Sua coloração normalmente é preta, podendo haver exemplares com tons mais acinzentados. Pets dourados e vermelhos também são oficialmente reconhecidos, apesar de mais incomuns.",
+    "particulars": [
+      {
+        "name": "Energia",
+        "value": 3
+      },
+      {
+        "name": "Obediência",
+        "value": 5
+      },
+      {
+        "name": "Inteligência",
+        "value": 4
+      },
+      {
+        "name": "Territorialista",
+        "value": 3
+      },
+      {
+        "name": "Apego ao dono",
+        "value": 5
+      },
+      {
+        "name": "Tendência a latir",
+        "value": 2
+      },
+      {
+        "name": "Amizade com crianças",
+        "value": 4
+      },
+      {
+        "name": "Amizade com outros animais",
+        "value": 3
+      }
+    ]
   }
 ]
