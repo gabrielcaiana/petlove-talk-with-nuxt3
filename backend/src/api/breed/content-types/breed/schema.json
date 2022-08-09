@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "breeds",
+  "info": {
+    "singularName": "breed",
+    "pluralName": "breeds",
+    "displayName": "breed",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": false
+    },
+    "image": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "pelage": {
+      "type": "text"
+    },
+    "particulars": {
+      "type": "json"
+    }
+  }
+}
