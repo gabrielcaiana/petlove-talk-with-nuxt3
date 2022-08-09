@@ -1,23 +1,29 @@
 <script setup>
-import breeds from '~/mocks/breed.json'
+defineProps({
+  breeds: {
+    type: Array,
+    required: true,
+  }
+})
 </script>
 
 <template>
   <div class="container m-auto">
-    <ul class="flex flex-wrap justify-center gap-8">
+    <ul class="flex max-w-[1200px] m-auto flex-wrap justify-center gap-8">
       <nuxt-link 
         v-for="item in breeds" 
+        :key="item.id"
         class="card-zoom"
-         :to="{
+        :to="{
           name: 'breeds-slug',
           params: {
-            slug: item.slug
+            slug: item.attributes.slug
           }
         }">
         <div :class="`card-zoom-image`">
-          <img class="object-cover" :src="item.image.url" :alt="item.name">
+          <img class="object-cover" :src="item.attributes.image" :alt="item.attributes.name">
         </div>
-        <h1 class="card-zoom-text">{{ item.name }}</h1>
+        <span class="card-zoom-text">{{ item.attributes.name }}</span>
       </nuxt-link>
     </ul>
   </div>

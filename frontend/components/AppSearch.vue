@@ -1,15 +1,19 @@
 <script setup>
   import { ref, computed } from 'vue'
-  import breeds from '~/mocks/breed.json'
+  import useBreeds from '~/composables/useBreeds'
+
   const search = ref(null)
   let results = ref([])
+
+  const { data } = await useBreeds()
+  const { breeds } = data.value
 
   const processChange = computed(() => useDebounceFn(() => filteredBreeds(), 1000))
 
   const filteredBreeds = () => {
     results.value = []
     const term = search.value.toLowerCase()
-    breeds.filter(breed => breed.name.toLowerCase().includes(term) && results.value.push(breed))
+    breeds?.data.filter(breed => breed.attributes.name.toLowerCase().includes(term) && results.value.push(breed))
   }
 </script>
 
@@ -34,7 +38,6 @@
         />
       </div>
 
-      <!-- list breeds -->
       <div
         v-show="search"
         class="w-full rounded-lg shadow-md shadow-neutral-dark p-6 absolute bg-white z-10"
@@ -46,13 +49,13 @@
             :to="{
               name: 'breeds-slug',
               params: {
-                slug: breed.slug
+                slug: breed.attributes.slug
               }
             }"
             class="py-2 text-neutral-dark cursor-pointer hover:text-primary-light transition duration-300 ease-in-out"
             @click.native="search = ''"
           >
-          {{ breed.name }}
+          {{ breed.attributes.name }}
           </nuxt-link>
           <p v-show="!results.length" class="text-neutral">
             Pesquise por uma raça existente...

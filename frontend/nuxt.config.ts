@@ -28,7 +28,14 @@ export default defineNuxtConfig({
 
  modules: [
   '@vueuse/nuxt',
+  'nuxt-graphql-client'
 ],
+
+runtimeConfig: {
+  public: {
+    GQL_HOST: 'http://localhost:1337/graphql',
+  }
+},
 
  build: {
   postcss: {

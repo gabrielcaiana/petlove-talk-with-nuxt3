@@ -1,0 +1,37 @@
+query breeds {
+  breeds {
+    data {
+      id
+      attributes {
+        name
+        slug
+        image
+        description
+        pelage
+        particulars
+      }
+    }
+  }
+}
+
+query findBreedBySlug($slug: String! $publicationState: String!, $modelName: String!) {
+  findSlug(
+    slug: $slug,
+    publicationState: $publicationState,
+    modelName: $modelName
+  ) {
+    ...on BreedEntityResponse {
+      data {
+        id
+        attributes {
+          name
+          slug
+          image
+          description
+          pelage
+          particulars
+        }
+      }
+    }
+  }
+}
