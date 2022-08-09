@@ -9,7 +9,7 @@ import breeds from '~/mocks/breed.json'
         v-for="item in breeds" 
         class="card-zoom"
          :to="{
-          name: 'pets-slug',
+          name: 'breeds-slug',
           params: {
             slug: item.slug
           }

@@ -1,30 +1,16 @@
 <script setup>
-  import { ref, computed, reactive } from 'vue'
+  import { ref, computed } from 'vue'
+  import breeds from '~/mocks/breed.json'
   const search = ref(null)
-  const results = reactive([])
+  let results = ref([])
 
-  const processChange = computed(() => useDebounceFn(() => filteredPets(), 1000))
-  const filteredPets = () => pets.filter(pet => {
-    if(pet.name.toLowerCase() === search.value.toLowerCase()) return results.push(pet)
-  })
+  const processChange = computed(() => useDebounceFn(() => filteredBreeds(), 1000))
 
-  const pets = reactive([
-    {
-      id: 1,
-      name: 'Cat',
-      slug: 'cat'
-    },
-     {
-      id: 2,
-      name: 'Dog',
-      slug: 'dog'
-    },
-     {
-      id: 3,
-      name: 'Fish',
-      slug: 'fish'
-    }
-  ])
+  const filteredBreeds = () => {
+    results.value = []
+    const term = search.value.toLowerCase()
+    breeds.filter(breed => breed.name.toLowerCase().includes(term) && results.value.push(breed))
+  }
 </script>
 
 <template>
@@ -48,31 +34,30 @@
         />
       </div>
 
-      <!-- list pets -->
+      <!-- list breeds -->
       <div
-        v-show="results.length && search"
+        v-show="search"
         class="w-full rounded-lg shadow-md shadow-neutral-dark p-6 absolute bg-white z-10"
       >
         <ul class="flex flex-col">
           <nuxt-link
-            v-for="pet in results"
-            :key="pet.id"
+            v-for="breed in results"
+            :key="breed.id"
             :to="{
-              name: 'pets-slug',
+              name: 'breeds-slug',
               params: {
-                slug: pet.slug
+                slug: breed.slug
               }
             }"
             class="py-2 text-neutral-dark cursor-pointer hover:text-primary-light transition duration-300 ease-in-out"
             @click.native="search = ''"
           >
-          {{ pet.name }}
+          {{ breed.name }}
           </nuxt-link>
+          <p v-show="!results.length" class="text-neutral">
+            Pesquise por uma raça existente...
+          </p>
         </ul>
-
-        <p v-if="!pets.length" class="text-neutral-dark">
-          Nenhuma raça encontrada
-        </p>
       </div>
     </div>
   </div>
